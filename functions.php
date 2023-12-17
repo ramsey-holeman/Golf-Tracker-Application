@@ -1,5 +1,4 @@
 <?php
-// Worked on by Ramsey
 
 // checks if the user is logged in
 function check_login($conn) {
