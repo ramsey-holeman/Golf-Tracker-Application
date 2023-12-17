@@ -9,7 +9,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+
+
+
         <script src="" async defer></script>
     </body>
 </html>
