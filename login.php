@@ -9,11 +9,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <h2>Log In</h2><br><br>
+        <p>Enter your login credentials below</p><br>
+        <form action="">
+            <label for="uname">Username:</label><br>
+            <input type="text" id="uname" name="uname"><br>
+            
+            <label for="pword">Password:</label><br>
+            <input type="text" id="pword" name="pword"><br>
 
-
-
+            <input type="submit" value="Log In"><br><br>
+        </form>
 
         <script src="" async defer></script>
     </body>
