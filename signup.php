@@ -1,6 +1,6 @@
 <?php
 session_start();
-  include "db_connect.php";
+  include "connection.php";
   include "functions.php";
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -43,9 +43,9 @@ session_start();
   </header>
 </head>
 <body>
-<h2 style="text-align: center;">Sign Up</h2>
-<br>
+<h2>Sign Up</h2><br>
 <div>
+  <p>Enter your information below to create an account</p>
   <form action="" method="post" autocomplete="off" style="text-align: center">
     <label for="fname">First Name:</label>
     <input type="text" name="fname" id="fname" required><br><br>

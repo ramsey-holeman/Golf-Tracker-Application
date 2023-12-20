@@ -10,17 +10,18 @@
     </head>
     <body>
         <h2>Log In</h2><br><br>
-        <p>Enter your login credentials below</p><br>
-        <form action="">
+        <p style="text-align: center;">Enter your login credentials below</p><br><br>
+        <form style="text-align: center" action="" method = "post" autocomplete="off">
             <label for="uname">Username:</label><br>
-            <input type="text" id="uname" name="uname"><br>
+            <input type="text" id="uname" name="uname"><br><br>
             
             <label for="pword">Password:</label><br>
-            <input type="text" id="pword" name="pword"><br>
+            <input type="text" id="pword" name="pword"><br><br>
 
             <input type="submit" value="Log In"><br><br>
         </form>
 
+        <p style="text-align: center;">Don't have an account? <a href="signup.php" class="button-blue">Sign up here!</a></p>
         <script src="" async defer></script>
     </body>
 </html>
