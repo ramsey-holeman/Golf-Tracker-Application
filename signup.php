@@ -14,10 +14,10 @@ session_start();
     if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($password)){
         // save to database
         $user_id = random_num(10);
-        $sql = "insert into users (user_id,first_name,last_name,email,pword) values('$user_id', '$firstname', '$lastname', '$email', '$password')";
+        $sql = "insert into users (user_id,firstname,lastname,email,password) values('$user_id', '$firstname', '$lastname', '$email', '$password')";
         mysqli_query($conn, $sql);
         echo "Sign Up was successful";
-        header("Location: login_page.php");
+        header("Location: index.php");
         die();
 
     }else{
@@ -53,8 +53,8 @@ session_start();
     <label for="lname">Last Name:</label>
     <input type="text" name="lname" id="lname" required><br><br>
 
-    <label for="uname">Username:</label>
-    <input type="text" name="uname" id="uname" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required><br><br>
 
     <label for="pword">Password:</label>
     <input type="password" name="pword" id="pword" required><br><br>
