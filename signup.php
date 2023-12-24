@@ -35,11 +35,15 @@ session_start();
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">   
   <header>
-    <link rel="stylesheet" href="styles.css">
-    <div class="topnav" id="myTopnav">
-      <a href="index.php" class="active">Home</a>
-      <a href="logout.php">Logout</a>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="account.php">My Account</a></li>
+        <li><a href="golf_course.php">Golf Courses</a></li>
+        <li><a href="add_round.php">Add a Round</a></li>
+        <li style="float: right;"><a href="log_out.php" style="text-align: right;">Log Out</a></li>
+      </ul>
+    </nav>
   </header>
 </head>
 <body>
