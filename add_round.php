@@ -27,7 +27,7 @@ session_start();
         </header>
     </head>
     <body>
-        <h1>Welcome</h1>
+        <h1>Add a Round</h1>
         
         <script src="" async defer></script>
     </body>

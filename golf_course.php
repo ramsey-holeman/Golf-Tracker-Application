@@ -27,7 +27,7 @@ session_start();
         </header>
     </head>
     <body>
-        <h1>Welcome <php  ?></h1>
+        <h1>Golf Courses</h1>
         
         <script src="" async defer></script>
     </body>

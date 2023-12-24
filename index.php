@@ -27,7 +27,7 @@ session_start();
         </header>
     </head>
     <body>
-        <h1>Welcome <?php $user_data['firstname'] ?></h1>
+        <h1>Welcome <?php echo $user_data['firstname'] ?></h1>
         <p>Hello user</p>
         
         <script src="" async defer></script>
