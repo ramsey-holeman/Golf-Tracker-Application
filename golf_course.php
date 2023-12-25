@@ -3,7 +3,6 @@
 session_start();
     include "connection.php";
     include "functions.php";
-    // $user_data = checkLoginStatus();
     $user_data = check_login($conn);
 ?>
 <html>
@@ -28,6 +27,33 @@ session_start();
     </head>
     <body>
         <h1>Golf Courses</h1>
+        <h2>List of Courses Added</h2>
+        <?php
+            $course = "SELECT * FROM g_course"; 
+            $result = mysqli_query($conn, $course);
+            if ($result) {
+            while ($course = mysqli_fetch_array($result)) {
+                $course_name = $course['name'];
+                $course_loc = $course['location'];
+                $course_type = $course['course_type'];
+                echo "<table>";
+                echo "<tr>";
+                echo "<td>Name: $course_name</td>";
+                echo "<td>Location: $course_loc</td>";
+                echo "<td>Course Type: $course_type</td>";
+                echo "</tr>";
+                echo "</table>";}
+            }else {
+                echo "<p>No courses have been added.</p>";
+            }
+
+
+
+
+            mysqli_close($conn);
+        ?>
+
+        <h3>Want to add a course? <a href="">Click Here!</a></h3>
         
         <script src="" async defer></script>
     </body>
