@@ -31,20 +31,20 @@ session_start();
         <?php
             $course = "SELECT * FROM g_course"; 
             $result = mysqli_query($conn, $course);
-            if ($result) {
-            while ($course = mysqli_fetch_array($result)) {
-                $course_name = $course['name'];
-                $course_loc = $course['location'];
-                $course_type = $course['course_type'];
-                echo "<table>";
-                echo "<tr>";
-                echo "<td>Name: $course_name</td>";
-                echo "<td>Location: $course_loc</td>";
-                echo "<td>Course Type: $course_type</td>";
-                echo "</tr>";
-                echo "</table>";}
-            }else {
+            if (!$result) {
                 echo "<p>No courses have been added.</p>";
+            }else{
+                while ($course = mysqli_fetch_array($result)) {
+                    $course_name = $course['name'];
+                    $course_loc = $course['location'];
+                    $course_type = $course['course_type'];
+                    echo "<table>";
+                    echo "<tr>";
+                    echo "<td>Name: $course_name</td>";
+                    echo "<td>Location: $course_loc</td>";
+                    echo "<td>Course Type: $course_type</td>";
+                    echo "</tr>";
+                    echo "</table>";}
             }
 
 
