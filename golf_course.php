@@ -9,7 +9,7 @@ session_start();
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
+        <title>Golf Courses</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
@@ -52,7 +52,7 @@ session_start();
             mysqli_close($conn);
         ?>
 
-        <h3>Want to add a course? <a href="">Click Here!</a></h3>
+        <h3>Want to add a course? <a href="add_course.php">Click Here!</a></h3>
         
         <script src="" async defer></script>
     </body>
