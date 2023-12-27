@@ -31,9 +31,11 @@ session_start();
         <?php
             $course = "SELECT * FROM g_course"; 
             $result = mysqli_query($conn, $course);
+            // Check if the DB is empty
             if (!$result) {
                 echo "<p>No courses have been added.</p>";
             }else{
+                // Loop through all courses
                 while ($course = mysqli_fetch_array($result)) {
                     $course_name = $course['name'];
                     $course_loc = $course['location'];
@@ -43,13 +45,10 @@ session_start();
                     echo "<td>Name: $course_name</td>";
                     echo "<td>Location: $course_loc</td>";
                     echo "<td>Course Type: $course_type</td>";
+                    echo "<td>View Course: <a class= href=course.php?course_id=$course_id>View</a>";
                     echo "</tr>";
                     echo "</table>";}
             }
-
-
-
-
             mysqli_close($conn);
         ?>
 
